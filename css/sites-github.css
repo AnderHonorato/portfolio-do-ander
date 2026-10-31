@@ -24,3 +24,93 @@
 @media(max-width:800px){.site-github-grade{grid-template-columns:repeat(2,minmax(0,1fr))}.site-github-card{min-height:306px}}
 @media(max-width:560px){.site-github-grade{grid-template-columns:1fr}.site-github-card{min-height:250px}.site-github-filtros{gap:7px}.site-github-filtros button{padding:8px 11px;font-size:11px}}
 @media(prefers-reduced-motion:reduce){.site-github-card,.site-github-card .site-github-symbol,.site-github-links a{transition:none!important}}
+
+/* Identidade compartilhada, personalidades próprias por projeto.
+   Todas as peças mantêm os mesmos tokens tipográficos e controles. */
+.site-github-grade{grid-auto-flow:row dense;align-items:stretch}
+.site-github-card{isolation:isolate;overflow:hidden;border-top:0;--site-tinta:var(--site-cor);background:var(--surface);border-radius:22px;box-shadow:0 3px 14px #5134210a;padding:24px}
+.site-github-card::before{content:'';position:absolute;left:0;top:0;right:0;height:3px;background:var(--site-cor)}
+.site-github-card .site-github-symbol{position:relative;z-index:2;flex:none}
+.site-github-card .site-github-cenario{pointer-events:none;position:relative;z-index:0}
+.site-github-card h3,.site-github-card p,.site-github-card .tags,.site-github-card .site-github-links{position:relative;z-index:1}
+.site-github-card .site-github-category{position:relative;z-index:1}
+.site-github-card:hover{transform:translateY(-6px);box-shadow:0 17px 35px #543a251e}
+.site-github-card .site-github-symbol svg{transition:transform .45s cubic-bezier(.22,1,.36,1)}
+.site-github-card:hover .site-github-symbol svg{transform:scale(1.12) rotate(-6deg)}
+/* 01: utilitários / painel editorial, horizontal */
+.site-card--ferramentas{grid-column:span 2;display:grid;grid-template-columns:74px minmax(0,1fr) 208px;grid-template-rows:auto auto 1fr auto auto;column-gap:18px;min-height:285px;background:linear-gradient(112deg,var(--surface),color-mix(in srgb,var(--site-cor) 7%,var(--surface)))}
+.site-card--ferramentas .site-github-symbol{grid-column:1;grid-row:1/3;width:68px;height:68px}
+.site-card--ferramentas .site-github-category{grid-column:2;grid-row:1;align-self:end}
+.site-card--ferramentas h3{grid-column:2;grid-row:2;font-size:26px;max-width:300px}
+.site-card--ferramentas p{grid-column:2;grid-row:3;max-width:390px;font-size:13px}
+.site-card--ferramentas .tags{grid-column:2;grid-row:4}
+.site-card--ferramentas .site-github-links{grid-column:2;grid-row:5}
+.site-card--ferramentas .site-github-cenario{grid-column:3;grid-row:1/6;align-self:center}
+.mini-navegador{width:100%;min-height:175px;background:var(--paper);border:1px solid var(--line);border-radius:13px;box-shadow:10px 12px 0 color-mix(in srgb,var(--site-cor) 15%,transparent);padding:12px;transform:rotate(5deg);transition:transform .5s ease}
+.site-card--ferramentas:hover .mini-navegador{transform:rotate(1deg) translateY(-5px)}
+.mini-topo{display:flex;gap:4px;border-bottom:1px solid var(--line);padding-bottom:10px}
+.mini-topo i{display:block;background:var(--site-cor);width:6px;height:6px;border-radius:50%;opacity:.6}
+.mini-ferramentas{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin:12px 0}
+.mini-ferramentas span{height:40px;border-radius:8px;border:1px solid var(--line);background:linear-gradient(140deg,color-mix(in srgb,var(--site-cor) 20%,var(--paper)),var(--paper))}
+.mini-ferramentas span:nth-child(2){background:color-mix(in srgb,#789279 15%,var(--paper))}
+.mini-ferramentas span:nth-child(3){background:color-mix(in srgb,#7a90b7 15%,var(--paper))}
+.mini-navegador b{display:block;font-family:Caveat,cursive;font-weight:600;font-size:15px;text-align:center;color:var(--accent-dark)}
+/* 02: astro / noite silenciosa */
+.site-card--astro{background:radial-gradient(circle at 80% 5%,#786f9e30,transparent 46%),var(--surface)}
+.site-card--astro .site-github-cenario{order:-1;height:114px;margin:-8px -5px 12px;display:grid;place-items:center}
+.astro-esfera{position:relative;width:120px;height:100px}
+.astro-circulo{position:absolute;left:24px;top:7px;width:82px;height:82px;border:1px solid var(--site-cor);border-radius:50%;transform:rotate(-35deg) scaleX(.8);box-shadow:0 0 0 13px color-mix(in srgb,var(--site-cor) 6%,transparent)}
+.astro-lua{position:absolute;left:45px;top:25px;width:42px;height:42px;border-radius:50%;box-shadow:inset -15px -6px 0 var(--site-cor);transform:rotate(-27deg)}
+.astro-esfera i{position:absolute;left:9px;top:24px;width:4px;height:4px;border-radius:50%;background:var(--site-cor)}
+.astro-esfera i:nth-last-child(2){top:81px;left:113px}.astro-esfera i:last-child{top:3px;left:103px}
+/* 03: jogo / cor acentuada e dado inclinado */
+.site-card--roleta{background:radial-gradient(circle at 84% 16%,#bb5e8220,transparent 44%),var(--surface)}
+.site-card--roleta .site-github-cenario{height:86px;order:-1;display:flex;justify-content:space-between;align-items:center;margin:-3px 0 14px}
+.roleta-dado{display:grid;grid-template-columns:repeat(2,1fr);gap:5px;padding:13px;width:78px;height:78px;border-radius:19px;background:var(--site-cor);color:white;transform:rotate(-12deg);box-shadow:7px 7px 0 color-mix(in srgb,var(--site-cor) 18%,transparent);transition:transform .55s}
+.site-card--roleta:hover .roleta-dado{transform:rotate(8deg)}
+.roleta-dado i{font:700 15px 'DM Sans',sans-serif;font-style:normal;display:grid;place-items:center;border:1px solid #fff6;border-radius:5px}
+.roleta-idade{padding:6px 9px;border-radius:10px;border:1px solid color-mix(in srgb,var(--site-cor) 25%,var(--line));font-weight:700;font-size:12px;color:var(--site-cor)}
+/* 04: memórias / tira de filme em papel */
+.site-card--memorias{background:linear-gradient(160deg,color-mix(in srgb,#e7b5b6 16%,var(--surface)),var(--surface) 72%);border-radius:25px 12px 25px 12px}
+.site-card--memorias .site-github-cenario{order:-1;height:94px;margin:-8px 0 17px}
+.memorias-fita{display:flex;gap:6px;height:80px;width:100%;transform:rotate(-4deg);padding:10px 0;background:repeating-linear-gradient(90deg,transparent,transparent 10px,var(--site-cor) 10px,var(--site-cor) 12px) left top/100% 3px no-repeat,repeating-linear-gradient(90deg,transparent,transparent 10px,var(--site-cor) 10px,var(--site-cor) 12px) left bottom/100% 3px no-repeat}
+.memorias-fita span{display:grid;place-items:center;flex:1;border-radius:8px;background:color-mix(in srgb,var(--site-cor) 15%,var(--paper));color:var(--site-cor);font-size:21px;transition:transform .3s}
+.site-card--memorias:hover .memorias-fita span:nth-child(2){transform:translateY(-6px)}
+/* 05: caminho solar com moldura larga */
+.site-card--girassol{grid-column:span 2;display:grid;grid-template-columns:minmax(0,1fr) 176px;grid-template-rows:auto auto auto 1fr auto auto;column-gap:18px;background:linear-gradient(120deg,var(--surface) 60%,color-mix(in srgb,var(--site-cor) 17%,var(--surface)))}
+.site-card--girassol .site-github-cenario{grid-column:2;grid-row:1/7;align-self:center;min-height:200px;display:grid;place-items:center}
+.site-card--girassol .site-github-symbol,.site-card--girassol .site-github-category,.site-card--girassol h3,.site-card--girassol p,.site-card--girassol .tags,.site-card--girassol .site-github-links{grid-column:1}
+.site-card--girassol h3{font-family:Caveat,cursive;font-size:31px}
+.girassol-flor{width:115px;height:115px;border-radius:50%;background:repeating-conic-gradient(from 10deg,color-mix(in srgb,var(--site-cor) 45%,#f2d98d) 0 12deg,transparent 12deg 22deg);display:grid;place-items:center;animation:girar-flor 24s linear infinite}
+.girassol-flor span{display:block;width:49px;height:49px;border-radius:50%;background:radial-gradient(circle,#866637 30%,#73542f 34%,#b58b53 65%)}
+.girassol-linha{font-family:Caveat,cursive;font-size:16px;color:var(--accent-dark);transform:rotate(-4deg);text-align:center;margin-top:18px}
+@keyframes girar-flor{to{transform:rotate(360deg)}}
+/* 06: links / minimal e vertical */
+.site-card--links{border-radius:12px;background:var(--surface)}
+.site-card--links .site-github-cenario{height:80px;order:-1;display:grid;align-items:center}
+.links-diagrama{display:flex;gap:9px;justify-content:center;transform:rotate(-8deg)}
+.links-diagrama span{width:38px;height:40px;border:2px solid var(--site-cor);border-radius:19px;display:block;background:color-mix(in srgb,var(--site-cor) 10%,transparent)}
+.links-diagrama span:nth-child(2){margin-left:-21px;transform:translateY(15px)}.links-diagrama span:nth-child(3){margin-left:-21px;transform:translateY(-4px)}
+/* 07: criador / tipografia editorial sobre linhas */
+.site-card--mauricio{background:linear-gradient(146deg,color-mix(in srgb,#3f5060 10%,var(--surface)),var(--surface))}
+.site-card--mauricio .site-github-cenario{height:100px;order:-1;border-bottom:1px solid var(--line);margin-bottom:13px;display:flex;align-items:center;justify-content:center}
+.mauricio-letra{font-size:80px;letter-spacing:-.11em;font-family:'Instrument Serif',Georgia,serif;color:var(--site-cor);line-height:1}
+.mauricio-traço{position:absolute;height:1px;background:var(--site-cor);opacity:.5;width:85%;bottom:25px;transform:rotate(-8deg)}
+/* 08: editorial / citação tipográfica grande */
+.site-card--desperte{grid-column:span 2;display:grid;grid-template-columns:minmax(0,1fr) 145px;grid-template-rows:auto auto auto 1fr auto auto;column-gap:22px;background:linear-gradient(120deg,var(--surface),color-mix(in srgb,var(--site-cor) 10%,var(--surface)))}
+.site-card--desperte .site-github-cenario{grid-column:2;grid-row:1/7;align-self:center;height:190px;background:color-mix(in srgb,var(--site-cor) 9%,var(--surface));border-radius:9px;box-shadow:9px 9px 0 color-mix(in srgb,var(--site-cor) 10%,transparent);display:flex;flex-direction:column;align-items:center;justify-content:center;transform:rotate(3deg)}
+.site-card--desperte .site-github-symbol,.site-card--desperte .site-github-category,.site-card--desperte h3,.site-card--desperte p,.site-card--desperte .tags,.site-card--desperte .site-github-links{grid-column:1}
+.site-card--desperte h3{font-family:'Instrument Serif',Georgia,serif;font-size:30px;font-weight:400}
+.desperte-quote{font-family:Georgia,serif;font-size:130px;color:var(--site-cor);line-height:.9;transform:translateY(20px)}
+.desperte-linhas{display:block;width:70%;height:25px;background:repeating-linear-gradient(to bottom,var(--line) 0 2px,transparent 2px 9px)}
+/* 09: lua / composição circular com pontilhado */
+.site-card--lua{background:radial-gradient(circle at 75% 12%,color-mix(in srgb,var(--site-cor) 15%,transparent),transparent 52%),var(--surface);border-radius:13px 30px 13px 30px}
+.site-card--lua .site-github-cenario{order:-1;height:95px;margin:-5px 0 14px;display:grid;place-items:center}
+.lua-crescente{position:absolute;width:73px;height:73px;border-radius:50%;box-shadow:inset -24px 0 0 color-mix(in srgb,var(--site-cor) 62%,#c3adc4);transform:rotate(-32deg)}
+.lua-estrela{position:absolute;color:var(--site-cor);font-size:23px;transform:translate(40px,-22px)}
+.site-card--lua .site-github-symbol{border-radius:50%}
+/* Lista reagrupada: spans duplos passam a ocupar a linha completa quando filtros ocultam os irmãos. */
+@media(max-width:1000px){.site-card--ferramentas,.site-card--girassol,.site-card--desperte{grid-column:span 2}}
+@media(max-width:800px){.site-github-grade{grid-template-columns:repeat(2,minmax(0,1fr))}.site-card--ferramentas{grid-template-columns:60px minmax(0,1fr) 150px}.mini-navegador{min-height:165px}.site-card--girassol{grid-template-columns:minmax(0,1fr) 160px}}
+@media(max-width:560px){.site-github-grade{grid-template-columns:1fr}.site-card--ferramentas,.site-card--girassol,.site-card--desperte{grid-column:auto;display:flex;flex-direction:column;gap:0}.site-card--ferramentas .site-github-cenario{order:-1;width:190px;align-self:center;margin:0 0 22px}.site-card--girassol .site-github-cenario{order:-1;min-height:132px;margin-bottom:25px}.site-card--desperte .site-github-cenario{order:-1;height:110px;width:110px;margin:0 0 15px;align-self:center}.site-card--desperte .desperte-quote{font-size:80px}.site-card--ferramentas h3,.site-card--girassol h3,.site-card--desperte h3{font-size:25px}.site-github-card{padding:20px}.site-card--roleta .site-github-cenario{order:-1}}
+@media(prefers-reduced-motion:reduce){.girassol-flor{animation:none}.mini-navegador,.roleta-dado,.memorias-fita span{transition:none}}
