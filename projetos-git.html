@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="pt-BR" data-tema="claro">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f7f1e7">
+<meta name="description" content="Catálogo dos projetos públicos de Anderson Honorato no GitHub, com links verificados para GitHub Pages quando disponíveis.">
+<title>Todos os projetos · Anderson Honorato</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+<style>:root{font-family:'DM Sans',Arial,sans-serif;--papel:#f7f1e7;--superficie:#fffaf3;--texto:#3c342d;--muted:#817369;--linha:#e8ddcc;--destaque:#b36d40;--sombra:0 15px 40px rgba(86,49,33,.08)}
+html[data-tema="escuro"]{--papel:#272523;--superficie:#342f2b;--texto:#fbf1e6;--muted:#c9b9aa;--linha:#574c42;--destaque:#e6a47b;--sombra:0 15px 38px #0003}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--papel);color:var(--texto)}button,input{font:inherit}button{cursor:pointer}a{color:inherit}a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--destaque);outline-offset:3px}
+.fundo{min-height:100vh;position:relative;overflow:hidden}.fundo::before{content:'';position:absolute;top:-180px;right:-200px;width:600px;height:600px;border:1px solid var(--linha);border-radius:50%;pointer-events:none}.fundo::after{content:'';position:absolute;top:-60px;right:-70px;width:360px;height:360px;border:1px dashed var(--destaque);border-radius:50%;opacity:.25;pointer-events:none}
+.conteudo{width:min(1150px,calc(100% - 40px));margin:auto;position:relative;z-index:1}.cabecalho{display:flex;justify-content:space-between;align-items:center;gap:15px;padding:28px 0;border-bottom:1px solid var(--linha)}.marca{text-decoration:none;font-weight:700;display:flex;gap:10px;align-items:center;font-size:16px}.marca span{display:grid;place-items:center;width:38px;height:38px;border-radius:12px;background:var(--destaque);color:var(--papel)}.cabecalho-acoes{display:flex;gap:12px;align-items:center}.link-voltar{font-size:12px;text-decoration:none;border-bottom:1px solid var(--linha);padding:6px}.trocar-tema{border:1px solid var(--linha);border-radius:50%;background:var(--superficie);color:var(--texto);height:38px;width:38px}
+.hero{padding:70px 0 36px;max-width:880px}.sobretitulo{color:var(--destaque);font:600 11px 'DM Mono',monospace;letter-spacing:.2em;text-transform:uppercase}.hero h1{font-size:clamp(43px,7vw,85px);letter-spacing:-.05em;line-height:1.03;font-weight:500;margin:22px 0 18px;font-family:'Instrument Serif',Georgia,serif}.hero h1 em{color:var(--destaque);font-weight:400}.hero p{color:var(--muted);font-size:15px;line-height:1.8;max-width:680px;margin:0}
+.resumo{display:flex;gap:32px;flex-wrap:wrap;padding:21px 0 38px;border-bottom:1px solid var(--linha)}.resumo strong{font:600 25px 'Caveat',cursive;display:block}.resumo span{color:var(--muted);font-size:12px}.filtros{display:flex;align-items:center;gap:9px;flex-wrap:wrap;padding:29px 0 14px}.filtros button{padding:10px 13px;border:1px solid var(--linha);border-radius:100px;background:var(--superficie);color:var(--muted);font-size:12px;font-weight:600;transition:transform .2s,background .2s}.filtros button:hover{transform:translateY(-2px)}.filtros button[aria-pressed=true]{background:var(--destaque);color:var(--papel);border-color:var(--destaque)}.ferramentas{display:flex;justify-content:space-between;gap:15px;align-items:center;margin-bottom:22px}.ferramentas label{display:block;flex:1;max-width:490px}.ferramentas input{background:var(--superficie);color:var(--texto);width:100%;border:1px solid var(--linha);padding:13px 17px;border-radius:12px}.contagem{font-size:12px;color:var(--muted);white-space:nowrap}
+.grade{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px;padding-bottom:60px}.projeto{position:relative;overflow:hidden;display:flex;flex-direction:column;padding:23px;border-radius:22px;background:var(--superficie);border:1px solid var(--linha);min-height:322px;transition:transform .3s,box-shadow .3s}.projeto:hover{transform:translateY(-5px);box-shadow:var(--sombra)}.projeto[hidden]{display:none!important}.topo-card{display:flex;align-items:start;justify-content:space-between;position:relative;z-index:1}.selo-grupo{font-size:10px;color:var(--cor);font-weight:700;text-transform:uppercase;letter-spacing:.1em}.icone-projeto{font:500 35px 'Instrument Serif',Georgia,serif;color:var(--cor);line-height:1}.grafismo{height:64px;margin:10px 0 16px;display:flex;align-items:center;position:relative}.grafismo i{position:absolute;display:block;width:66px;height:66px;border:1px solid var(--cor);border-radius:50%;opacity:.45;transition:transform .5s}.grafismo i:nth-child(1){left:8px;transform:scale(.8)}.grafismo i:nth-child(2){left:30px;transform:rotate(38deg) scaleX(.5)}.grafismo i:nth-child(3){left:50px;transform:rotate(-38deg) scaleX(.5)}.projeto:hover .grafismo i:nth-child(2){transform:rotate(60deg) scaleX(.6)}.projeto:hover .grafismo i:nth-child(3){transform:rotate(-60deg) scaleX(.6)}.grafismo-ferramentas i{border-radius:12px}.grafismo-automacao i{border-style:dashed;border-radius:15px}.grafismo-experiencias i{border-radius:70% 50% 60% 20%}.grafismo-conteudo i{border-radius:5px;transform:rotate(-12deg)}.grafismo-conteudo i:nth-child(2){transform:rotate(8deg)}.grafismo-portfolios i{border-radius:0 50% 50% 50%}
+.projeto h2{font-size:22px;letter-spacing:-.03em;line-height:1.15;margin:0 0 11px}.projeto p{font-size:12px;color:var(--muted);line-height:1.7;margin:0 0 24px}.rodape-card{margin-top:auto}.situacao{font-size:10px;display:inline-block;padding:6px 9px;border-radius:20px;color:var(--muted);border:1px solid var(--linha);margin-bottom:10px}.situacao.publicado{color:var(--cor)}.links-card{display:flex;gap:9px;flex-wrap:wrap}.links-card a{font-size:12px;font-weight:700;padding:11px 13px;min-height:38px;text-decoration:none;border-radius:10px;border:1px solid var(--linha);transition:transform .2s;display:inline-flex;align-items:center;justify-content:center;gap:7px}.links-card a:hover{transform:translateY(-2px)}.botao-principal{color:white;background:var(--cor);border-color:var(--cor)!important}.botao-codigo{background:var(--papel);color:var(--texto)}
+.rodape{padding:25px 0 42px;display:flex;gap:15px;justify-content:space-between;border-top:1px solid var(--linha);font-size:12px;color:var(--muted)}
+@media(min-width:1000px){.projeto:nth-child(7n+1){grid-column:span 2;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:auto auto 1fr auto;gap:0 18px}.projeto:nth-child(7n+1) .topo-card,.projeto:nth-child(7n+1) h2,.projeto:nth-child(7n+1) p,.projeto:nth-child(7n+1) .rodape-card{grid-column:1}.projeto:nth-child(7n+1) .grafismo{grid-column:2;grid-row:1/5;align-self:center;height:145px;margin:0}.projeto:nth-child(7n+1) .grafismo i{width:116px;height:116px}}
+@media(max-width:900px){.grade{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:600px){.conteudo{width:min(100% - 28px,1150px)}.grade{grid-template-columns:1fr}.hero{padding:50px 0 28px}.resumo{gap:18px}.ferramentas{align-items:stretch;flex-direction:column}.cabecalho-acoes{gap:7px}.link-voltar{font-size:11px}.projeto{min-height:290px}}@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}}
+</style></head>
+<body><div class="fundo"><div class="conteudo">
+<header class="cabecalho"><a class="marca" href="./index.html"><span aria-hidden="true">A</span> Anderson Honorato</a><div class="cabecalho-acoes"><a class="link-voltar" href="./index.html#projetos">Voltar ao portfólio</a><button type="button" class="trocar-tema" id="botao-tema" aria-label="Alternar tema claro e escuro" title="Alternar tema">◑</button></div></header>
+<main>
+<section class="hero"><span class="sobretitulo">Portfólio · GitHub</span><h1>Um acervo de <em>ideias que viraram código.</em></h1><p>Projetos públicos de experiências digitais, ferramentas, jogos, estudo e automação. Cada um tem sua identidade; os links mostram o site GitHub Pages somente quando há publicação confirmada, ou levam diretamente ao repositório.</p></section>
+<div class="resumo" aria-label="Resumo do catálogo"><div><strong>26 projetos</strong><span>Repositórios públicos selecionados</span></div><div><strong>12 sites</strong><span>GitHub Pages confirmado</span></div><div><strong>0 projetos pet</strong><span>Excluídos conforme solicitado</span></div></div>
+<nav class="filtros" aria-label="Filtrar categorias"><button type="button" data-filtrar="todos" aria-pressed="true">Todos</button><button type="button" data-filtrar="portfolios" aria-pressed="false">Portfólios</button><button type="button" data-filtrar="educacao" aria-pressed="false">Educação</button><button type="button" data-filtrar="ferramentas" aria-pressed="false">Ferramentas</button><button type="button" data-filtrar="automacao" aria-pressed="false">Automação</button><button type="button" data-filtrar="experiencias" aria-pressed="false">Experiências</button><button type="button" data-filtrar="conteudo" aria-pressed="false">Conteúdo</button></nav>
+<div class="ferramentas"><label><input type="search" id="buscar-projetos" placeholder="Buscar um projeto…" aria-label="Buscar projetos por nome ou descrição"></label><span class="contagem" id="contador" role="status">26 projetos na seleção</span></div>
+<section class="grade" id="grade" aria-label="Lista de projetos"><article class="projeto" data-grupo="portfolios" style="--cor:#ba845d" aria-labelledby="titulo-0">
+  <div class="topo-card"><span class="selo-grupo">Portfólios</span><span class="icone-projeto" aria-hidden="true">◆</span></div>
+  <div class="grafismo grafismo-portfolios" aria-hidden="true"><i></i><i></i><i></i></div>
+  <h2 id="titulo-0">Portfólio principal</h2>
+  <p>Portfólio editorial com mostruário de projetos, estilos individuais e navegação por categorias.</p>
+  <div class="rodape-card"><span class="situacao publicado">GitHub Pages publicado</span>
+    <div class="links-card"><a href="https://anderhonorato.github.io/portfolio-do-ander/" target="_blank" rel="noopener noreferrer" class="botao-principal" aria-label="Abrir site Portfólio principal no GitHub Pages">Abrir site <span aria-hidden="true">↗</span></a><a href="https://github.com/AnderHonorato/portfolio-do-ander" target="_blank" rel="noopener noreferrer" class="botao-codigo">GitHub ↗</a></div>
+  </div>
+</article>
+<article class="projeto" data-grupo="portfolios" style="--cor:#8c8ba7" aria-labelledby="titulo-1">
+  <div class="topo-card"><span class="selo-grupo">Portfólios</span><span class="icone-projeto" aria-hidden="true">◫</span></div>
+  <div class="grafismo grafismo-portfolios" aria-hidden="true"><i></i><i></i><i></i></div>
+  <h2 id="titulo-1">Portfólio clássico</h2>
+  <p>Versão alternativa de portfólio com sites, formação e projetos em destaque.</p>
+  <div class="rodape-card"><span class="situacao publicado">GitHub Pages publicado</span>
+    <div class="links-card"><a href="https://anderhonorato.github.io/meu-portfolio/" target="_blank" rel="noopener noreferrer" class="botao-principal" aria-label="Abrir site Portfólio clássico no GitHub Pages">Abrir site <span aria-hidden="true">↗</span></a><a href="https://github.com/AnderHonorato/meu-portfolio" target="_blank" rel="noopener noreferrer" class="botao-codigo">GitHub ↗</a></div>
+  </div>
+</article>
+<article class="projeto" data-grupo="ferramentas" style="--cor:#c4956c" aria-labelledby="titulo-2">
+  <div class="topo-card"><span class="selo-grupo">Ferramentas</span><span class="icone-projeto" aria-hidden="true">▦</span></div>
+  <div class="grafismo grafismo-ferramentas" aria-hidden="true"><i></i><i></i><i></i></div>
+  <h2 id="titulo-2">Ferramentas do Ander</h2>
+  <p>Portal de ferramentas e utilitários, com busca, categorias e histórico local.</p>
+  <div class="rodape-card"><span class="situacao publicado">GitHub Pages publicado</span>
+    <div class="links-card"><a href="https://anderhonorato.github.io/Site-de-Renda-Passiva/portal/" target="_blank" rel="noopener noreferrer" class="botao-principal" aria-label="Abrir site Ferramentas do Ander no GitHub Pages">Abrir site <span aria-hidden="true">↗</span></a><a href="https://github.com/AnderHonorato/Site-de-Renda-Passiva" target="_blank" rel="noopener noreferrer" class="botao-codigo">GitHub ↗</a></div>
+  </div>
+</article>
+<article class="projeto" data-grupo="educacao" style="--cor:#8d83bb" aria-labelledby="titulo-3">
+  <div class="topo-card"><span class="selo-grupo">Educação</span><span class="icone-projeto" aria-hidden="true">✧</span></div>
+  <div class="grafismo grafismo-educacao" aria-hidden="true"><i></i><i></i><i></i></div>
+  <h2 id="titulo-3">Astro Flow</h2>
+  <p>Plataforma sobre mapas astrais, trânsitos e exploração do céu com visual próprio.</p>
+  <div class="rodape-card"><span class="situacao publicado">GitHub Pages publicado</span>
+    <div class="links-card"><a href="https://anderhonorato.github.io/Astro-Flow/" target="_blank" rel="noopener noreferrer" class="botao-principal" aria-label="Abrir site Astro Flow no GitHub Pages">Abrir site <span aria-hidden="true">↗</span></a><a href="https://github.com/AnderHonorato/Astro-Flow" target="_blank" rel="noopener noreferrer" class="botao-codigo">GitHub ↗</a></div>
+  </div>
+</article>
+<article class="projeto" data-grupo="automacao" style="--cor:#5da2a7" aria-labelledby="titulo-4">
+  <div class="topo-card"><span class="selo-grupo">Automação</span><span class="icone-projeto" aria-hidden="true">⌘</span></div>
+  <div class="grafismo grafismo-automacao" aria-hidden="true"><i></i><i></i><i></i></div>
+  <h2 id="titulo-4">AlphaBot</h2>
+  <p>Apresentação de automação e moderação de grupos com console demonstrativo.</p>
+  <div class="rodape-card"><span class="situacao publicado">GitHub Pages publicado</span>
+    <div class="links-card"><a href="https://anderhonorato.github.io/alphabotsite1/" target="_blank" rel="noopener noreferrer" class="botao-principal" aria-label="Abrir site AlphaBot no GitHub Pages">Abrir site <span aria-hidden="true">↗</span></a><a href="https://github.com/AnderHonorato/alphabotsite1" target="_blank" rel="noopener noreferrer" class="botao-codigo">GitHub ↗</a></div>
+  </div>
+</article>
+<article class="projeto" data-grupo="portfolios" style="--cor:#789ca3" aria-labelledby="titulo-5">
+  <div class="topo-card"><span class="selo-grupo">Portfólios</span><span class="icone-projeto" aria-hidden="true">↗</span></div>
+  <div class="grafismo grafismo-portfolios" aria-hidden="true"><i></i><i></i><i></i></div>
+  <h2 id="titulo-5">Minha página de links</h2>
+  <p>Atalhos pessoais, identidade e acesso aos demais projetos.</p>
+  <div class="rodape-card"><span class="situacao publicado">GitHub Pages publicado</span>
+    <div class="links-card"><a href="https://anderhonorato.github.io/links/" target="_blank" rel="noopener noreferrer" class="botao-principal" aria-label="Abrir site Minha página de links no GitHub Pages">Abrir site <span aria-hidden="true">↗</span></a><a href="https://github.com/AnderHonorato/links" target="_blank" rel="noopener noreferrer" class="botao-codigo">GitHub ↗</a></div>
+  </div>
+</article>
+<article class="projeto" data-grupo="conteudo" style="--cor:#b4889e" aria-labelledby="titulo-6">
+  <div class="topo-card"><span class="selo-grupo">Conteúdo</span><span class="icone-projeto" aria-hidden="true">✳</span></div>
+  <div class="grafismo grafismo-conteudo" aria-hidden="true"><i></i><i></i><i></i></div>
+  <h2 id="titulo-6">Desperte Quem Você Já É</h2>
+  <p>Landing page editorial de e-book de autoconhecimento e experiência de leitura.</p>
+  <div class="rodape-card"><span class="situacao publicado">GitHub Pages publicado</span>
+    <div class="links-card"><a href="https://anderhonorato.github.io/Desperte-Quem-voc-j-/" target="_blank" rel="noopener noreferrer" class="botao-principal" aria-label="Abrir site Desperte Quem Você Já É no GitHub Pages">Abrir site <span aria-hidden="true">↗</span></a><a href="https://github.com/AnderHonorato/Desperte-Quem-voc-j-" target="_blank" rel="noopener noreferrer" class="botao-codigo">GitHub ↗</a></div>
+  </div>
+</article>
+<article class="projeto" data-grupo="experiencias" style="--cor:#c88795" aria-labelledby="titulo-7">
+  <div class="topo-card"><span class="selo-grupo">Experiências</span><span class="icone-projeto" aria-hidden="true">♡</span></div>
+  <div class="grafismo grafismo-experiencias" aria-hidden="true"><i></i><i></i><i></i></div>
+  <h2 id="titulo-7">Eu te amo</h2>
+  <p>História audiovisual em slideshow com animações e lembranças.</p>
+  <div class="rodape-card"><span class="situacao publicado">GitHub Pages publicado</span>
+    <div class="links-card"><a href="https://anderhonorato.github.io/eu-te-amo-/" target="_blank" rel="noopener noreferrer" class="botao-principal" aria-label="Abrir site Eu te amo no GitHub Pages">Abrir site <span aria-hidden="true">↗</span></a><a href="https://github.com/AnderHonorato/eu-te-amo-" target="_blank" rel="noopener noreferrer" class="botao-codigo">GitHub ↗</a></div>
+  </div>
+</article>
+<article class="projeto" data-grupo="experiencias" style="--cor:#c59c55" aria-labelledby="titulo-8">
+  <div class="topo-card"><span class="selo-grupo">Experiências</span><span class="icone-projeto" aria-hidden="true">☼</span></div>
+  <div class="grafismo grafismo-experiencias" aria-hidden="true"><i></i><i></i><i></i></div>
+  <h2 id="titulo-8">Para meu namorado</h2>
+  <p>Jornada interativa romântica com girassóis e exploração de um mundo próprio.</p>
+  <div class="rodape-card"><span class="situacao publicado">GitHub Pages publicado</span>
+    <div class="links-card"><a href="https://anderhonorato.github.io/Para-meu-Namorado-/" target="_blank" rel="noopener noreferrer" class="botao-principal" aria-label="Abrir site Para meu namorado no GitHub Pages">Abrir site <span aria-hidden="true">↗</span></a><a href="https://github.com/AnderHonorato/Para-meu-Namorado-" target="_blank" rel="noopener noreferrer" class="botao-codigo">GitHub ↗</a></div>
+  </div>
+</article>
+<article class="projeto" data-grupo="experiencias" style="--cor:#bf718b" aria-labelledby="titulo-9">
+  <div class="topo-card"><span class="selo-grupo">Experiências</span><span class="icone-projeto" aria-hidden="true">◇</span></div>
+  <div class="grafismo grafismo-experiencias" aria-hidden="true"><i></i><i></i><i></i></div>
+  <h2 id="titulo-9">Roleta a Dois · 18+</h2>
+  <p>Jogo para adultos com desafios sorteados, pontuação e animações de dado.</p>
+  <div class="rodape-card"><span class="situacao publicado">GitHub Pages publicado</span>
+    <div class="links-card"><a href="https://anderhonorato.github.io/Roleta-a-Dois-/" target="_blank" rel="noopener noreferrer" class="botao-principal" aria-label="Abrir site Roleta a Dois · 18+ no GitHub Pages">Abrir site <span aria-hidden="true">↗</span></a><a href="https://github.com/AnderHonorato/Roleta-a-Dois-" target="_blank" rel="noopener noreferrer" class="botao-codigo">GitHub ↗</a></div>
+  </div>
+</article>
+<article class="projeto" data-grupo="conteudo" style="--cor:#9482bf" aria-labelledby="titulo-10">
+  <div class="topo-card"><span class="selo-grupo">Conteúdo</span><span class="icone-projeto" aria-hidden="true">☾</span></div>
+  <div class="grafismo grafismo-conteudo" aria-hidden="true"><i></i><i></i><i></i></div>
+  <h2 id="titulo-10">Encantos da Lua</h2>
+  <p>Site institucional de tarô e orientação espiritual com identidade lunar.</p>
+  <div class="rodape-card"><span class="situacao publicado">GitHub Pages publicado</span>
+    <div class="links-card"><a href="https://anderhonorato.github.io/encantos-da-lua/" target="_blank" rel="noopener noreferrer" class="botao-principal" aria-label="Abrir site Encantos da Lua no GitHub Pages">Abrir site <span aria-hidden="true">↗</span></a><a href="https://github.com/AnderHonorato/encantos-da-lua" target="_blank" rel="noopener noreferrer" class="botao-codigo">GitHub ↗</a></div>
+  </div>
+</article>
+<article class="projeto" data-grupo="conteudo" style="--cor:#8292ae" aria-labelledby="titulo-11">
+  <div class="topo-card"><span class="selo-grupo">Conteúdo</span><span class="icone-projeto" aria-hidden="true">✦</span></div>
+  <div class="grafismo grafismo-conteudo" aria-hidden="true"><i></i><i></i><i></i></div>
+  <h2 id="titulo-11">Mauricio Drew Bieber</h2>
+  <p>Página de criador de conteúdo com galeria, apresentação e links oficiais.</p>
+  <div class="rodape-card"><span class="situacao publicado">GitHub Pages publicado</span>
+    <div class="links-card"><a href="https://anderhonorato.github.io/mauriciodrewbieber.space/" target="_blank" rel="noopener noreferrer" class="botao-principal" aria-label="Abrir site Mauricio Drew Bieber no GitHub Pages">Abrir site <span aria-hidden="true">↗</span></a><a href="https://github.com/AnderHonorato/mauriciodrewbieber.space" target="_blank" rel="noopener noreferrer" class="botao-codigo">GitHub ↗</a></div>
+  </div>
+</article>
+<article class="projeto" data-grupo="educacao" style="--cor:#b67765" aria-labelledby="titulo-12">
+  <div class="topo-card"><span class="selo-grupo">Educação</span><span class="icone-projeto" aria-hidden="true">◌</span></div>
+  <div class="grafismo grafismo-educacao" aria-hidden="true"><i></i><i></i><i></i></div>
+  <h2 id="titulo-12">MenteVerso + Flow</h2>
+  <p>Psicanálise e programação guiada unificadas, com mascote, questões e laboratórios.</p>
+  <div class="rodape-card"><span class="situacao codigo">Código disponível</span>
+    <div class="links-card"><a href="https://github.com/AnderHonorato/mente-verso" target="_blank" rel="noopener noreferrer" class="botao-codigo">GitHub ↗</a></div>
+  </div>
+</article>
+<article class="projeto" data-grupo="experiencias" style="--cor:#818dcc" aria-labelledby="titulo-13">
+  <div class="topo-card"><span class="selo-grupo">Experiências</span><span class="icone-projeto" aria-hidden="true">✧</span></div>
+  <div class="grafismo grafismo-experiencias" aria-hidden="true"><i></i><i></i><i></i></div>
+  <h2 id="titulo-13">Infinity Flow</h2>
+  <p>Jogo incremental de fantasia com heróis, batalhas e progressão.</p>
+  <div class="rodape-card"><span class="situacao codigo">Código disponível</span>
+    <div class="links-card"><a href="https://github.com/AnderHonorato/infinity-flow" target="_blank" rel="noopener noreferrer" class="botao-codigo">GitHub ↗</a></div>
+  </div>
+</article>
+<article class="projeto" data-grupo="experiencias" style="--cor:#db9672" aria-labelledby="titulo-14">
+  <div class="topo-card"><span class="selo-grupo">Experiências</span><span class="icone-projeto" aria-hidden="true">✺</span></div>
+  <div class="grafismo grafismo-experiencias" aria-hidden="true"><i></i><i></i><i></i></div>
+  <h2 id="titulo-14">Games / Centelha</h2>
+  <p>Experimentos de jogos web e Android com interfaces próprias.</p>
+  <div class="rodape-card"><span class="situacao codigo">Código disponível</span>
+    <div class="links-card"><a href="https://github.com/AnderHonorato/Games" target="_blank" rel="noopener noreferrer" class="botao-codigo">GitHub ↗</a></div>
+  </div>
+</article>
+<article class="projeto" data-grupo="ferramentas" style="--cor:#5b997b" aria-labelledby="titulo-15">
+  <div class="topo-card"><span class="selo-grupo">Ferramentas</span><span class="icone-projeto" aria-hidden="true">▤</span></div>
+  <div class="grafismo grafismo-ferramentas" aria-hidden="true"><i></i><i></i><i></i></div>
+  <h2 id="titulo-15">MEI Hub</h2>
+  <p>Painel de gestão e rotinas pensado para microempreendedores.</p>
+  <div class="rodape-card"><span class="situacao codigo">Código disponível</span>
+    <div class="links-card"><a href="https://github.com/AnderHonorato/MEI-Hub-site" target="_blank" rel="noopener noreferrer" class="botao-codigo">GitHub ↗</a></div>
+  </div>
+</article>
+<article class="projeto" data-grupo="automacao" style="--cor:#6894b6" aria-labelledby="titulo-16">
+  <div class="topo-card"><span class="selo-grupo">Automação</span><span class="icone-projeto" aria-hidden="true">▥</span></div>
+  <div class="grafismo grafismo-automacao" aria-hidden="true"><i></i><i></i><i></i></div>
+  <h2 id="titulo-16">MarketSync</h2>
+  <p>Painel de e-commerce, operações e integração de processos.</p>
+  <div class="rodape-card"><span class="situacao codigo">Código disponível</span>
+    <div class="links-card"><a href="https://github.com/AnderHonorato/MarketSync-by-Ander-Flow" target="_blank" rel="noopener noreferrer" class="botao-codigo">GitHub ↗</a></div>
+  </div>
+</article>
+<article class="projeto" data-grupo="automacao" style="--cor:#5da7aa" aria-labelledby="titulo-17">
+  <div class="topo-card"><span class="selo-grupo">Automação</span><span class="icone-projeto" aria-hidden="true">◉</span></div>
+  <div class="grafismo grafismo-automacao" aria-hidden="true"><i></i><i></i><i></i></div>
+  <h2 id="titulo-17">FaleZap</h2>
+  <p>Central de atendimento e gestão de conversas.</p>
+  <div class="rodape-card"><span class="situacao codigo">Código disponível</span>
+    <div class="links-card"><a href="https://github.com/AnderHonorato/falezapNovo" target="_blank" rel="noopener noreferrer" class="botao-codigo">GitHub ↗</a></div>
+  </div>
+</article>
+<article class="projeto" data-grupo="conteudo" style="--cor:#c889a6" aria-labelledby="titulo-18">
+  <div class="topo-card"><span class="selo-grupo">Conteúdo</span><span class="icone-projeto" aria-hidden="true">✣</span></div>
+  <div class="grafismo grafismo-conteudo" aria-hidden="true"><i></i><i></i><i></i></div>
+  <h2 id="titulo-18">Flow Glow</h2>
+  <p>Produto digital com visual refinado e plataforma web.</p>
+  <div class="rodape-card"><span class="situacao codigo">Código disponível</span>
+    <div class="links-card"><a href="https://github.com/AnderHonorato/Flow-Glow" target="_blank" rel="noopener noreferrer" class="botao-codigo">GitHub ↗</a></div>
+  </div>
+</article>
+<article class="projeto" data-grupo="automacao" style="--cor:#7b95bd" aria-labelledby="titulo-19">
+  <div class="topo-card"><span class="selo-grupo">Automação</span><span class="icone-projeto" aria-hidden="true">⌁</span></div>
+  <div class="grafismo grafismo-automacao" aria-hidden="true"><i></i><i></i><i></i></div>
+  <h2 id="titulo-19">AnderFlow Sistemas</h2>
+  <p>Plataforma SaaS de gestão, CRM e automações.</p>
+  <div class="rodape-card"><span class="situacao codigo">Código disponível</span>
+    <div class="links-card"><a href="https://github.com/AnderHonorato/AnderFlow" target="_blank" rel="noopener noreferrer" class="botao-codigo">GitHub ↗</a></div>
+  </div>
+</article>
+<article class="projeto" data-grupo="experiencias" style="--cor:#927bbb" aria-labelledby="titulo-20">
+  <div class="topo-card"><span class="selo-grupo">Experiências</span><span class="icone-projeto" aria-hidden="true">▶</span></div>
+  <div class="grafismo grafismo-experiencias" aria-hidden="true"><i></i><i></i><i></i></div>
+  <h2 id="titulo-20">Yokira Astra</h2>
+  <p>Projeto de experiência audiovisual e catálogo de animes.</p>
+  <div class="rodape-card"><span class="situacao codigo">Código disponível</span>
+    <div class="links-card"><a href="https://github.com/AnderHonorato/Yokira-Astra" target="_blank" rel="noopener noreferrer" class="botao-codigo">GitHub ↗</a></div>
+  </div>
+</article>
+<article class="projeto" data-grupo="experiencias" style="--cor:#a177a5" aria-labelledby="titulo-21">
+  <div class="topo-card"><span class="selo-grupo">Experiências</span><span class="icone-projeto" aria-hidden="true">▷</span></div>
+  <div class="grafismo grafismo-experiencias" aria-hidden="true"><i></i><i></i><i></i></div>
+  <h2 id="titulo-21">Yokira Animes</h2>
+  <p>Outro projeto de interface de catálogo audiovisual com linguagem cinematográfica.</p>
+  <div class="rodape-card"><span class="situacao codigo">Código disponível</span>
+    <div class="links-card"><a href="https://github.com/AnderHonorato/yokira-animees" target="_blank" rel="noopener noreferrer" class="botao-codigo">GitHub ↗</a></div>
+  </div>
+</article>
+<article class="projeto" data-grupo="experiencias" style="--cor:#c39183" aria-labelledby="titulo-22">
+  <div class="topo-card"><span class="selo-grupo">Experiências</span><span class="icone-projeto" aria-hidden="true">♡</span></div>
+  <div class="grafismo grafismo-experiencias" aria-hidden="true"><i></i><i></i><i></i></div>
+  <h2 id="titulo-22">Enlace App</h2>
+  <p>Diário e experiências interativas para histórias afetivas.</p>
+  <div class="rodape-card"><span class="situacao codigo">Código disponível</span>
+    <div class="links-card"><a href="https://github.com/AnderHonorato/enlace-app" target="_blank" rel="noopener noreferrer" class="botao-codigo">GitHub ↗</a></div>
+  </div>
+</article>
+<article class="projeto" data-grupo="automacao" style="--cor:#639ba9" aria-labelledby="titulo-23">
+  <div class="topo-card"><span class="selo-grupo">Automação</span><span class="icone-projeto" aria-hidden="true">⌘</span></div>
+  <div class="grafismo grafismo-automacao" aria-hidden="true"><i></i><i></i><i></i></div>
+  <h2 id="titulo-23">AlphaBot clássico</h2>
+  <p>Outra versão de site de apresentação do bot e recursos de automação.</p>
+  <div class="rodape-card"><span class="situacao codigo">Código disponível</span>
+    <div class="links-card"><a href="https://github.com/AnderHonorato/alphabotsite" target="_blank" rel="noopener noreferrer" class="botao-codigo">GitHub ↗</a></div>
+  </div>
+</article>
+<article class="projeto" data-grupo="ferramentas" style="--cor:#a29bd2" aria-labelledby="titulo-24">
+  <div class="topo-card"><span class="selo-grupo">Ferramentas</span><span class="icone-projeto" aria-hidden="true">✎</span></div>
+  <div class="grafismo grafismo-ferramentas" aria-hidden="true"><i></i><i></i><i></i></div>
+  <h2 id="titulo-24">Lumina Notes</h2>
+  <p>Aplicativo de anotações com visual editorial; código para app desktop.</p>
+  <div class="rodape-card"><span class="situacao codigo">Código disponível</span>
+    <div class="links-card"><a href="https://github.com/AnderHonorato/lumina" target="_blank" rel="noopener noreferrer" class="botao-codigo">GitHub ↗</a></div>
+  </div>
+</article>
+<article class="projeto" data-grupo="ferramentas" style="--cor:#d07d5d" aria-labelledby="titulo-25">
+  <div class="topo-card"><span class="selo-grupo">Ferramentas</span><span class="icone-projeto" aria-hidden="true">▧</span></div>
+  <div class="grafismo grafismo-ferramentas" aria-hidden="true"><i></i><i></i><i></i></div>
+  <h2 id="titulo-25">Metrys Planilhas</h2>
+  <p>Ferramenta desktop de criação e organização de planilhas assistida.</p>
+  <div class="rodape-card"><span class="situacao codigo">Código disponível</span>
+    <div class="links-card"><a href="https://github.com/AnderHonorato/Metrys---Gerador-de-Planilhas" target="_blank" rel="noopener noreferrer" class="botao-codigo">GitHub ↗</a></div>
+  </div>
+</article></section>
+</main><footer class="rodape"><span>Anderson Honorato · Projetos autorais e experimentais</span><a href="./index.html">Portfólio principal</a></footer></div></div>
+<script>
+(() => {
+  const html=document.documentElement;
+  const botao=document.getElementById('botao-tema');
+  const anterior=localStorage.getItem('portfolio-theme');
+  if (anterior === 'dark') html.dataset.tema='escuro';
+  botao.addEventListener('click',() => {
+    html.dataset.tema=html.dataset.tema==='escuro'?'claro':'escuro';
+    localStorage.setItem('portfolio-theme',html.dataset.tema==='escuro'?'dark':'light');
+  });
+  const filtros=[...document.querySelectorAll('[data-filtrar]')];
+  const cartoes=[...document.querySelectorAll('.projeto')];
+  const busca=document.getElementById('buscar-projetos');
+  const contador=document.getElementById('contador');
+  let categoria='todos';
+  function atualizar() {
+    const texto=busca.value.trim().toLocaleLowerCase('pt-BR');
+    let total=0;
+    cartoes.forEach(card => {
+      const visivel=(categoria==='todos'||card.dataset.grupo===categoria) && card.textContent.toLocaleLowerCase('pt-BR').includes(texto);
+      card.hidden=!visivel;
+      if(visivel) total++;
+    });
+    contador.textContent=total+(total===1?' projeto na seleção':' projetos na seleção');
+    filtros.forEach(btn => btn.setAttribute('aria-pressed',String(btn.dataset.filtrar===categoria)));
+  }
+  filtros.forEach(btn => btn.addEventListener('click',()=>{categoria=btn.dataset.filtrar;atualizar()}));
+  busca.addEventListener('input',atualizar);
+})();
+</script></body></html>
