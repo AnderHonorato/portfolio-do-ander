@@ -1,0 +1,26 @@
+/* Sites publicados no GitHub Pages: extensão visual do portfólio. */
+.sites-github{position:relative}
+.site-github-filtros{display:flex;gap:9px;flex-wrap:wrap;margin:4px 0 15px}
+.site-github-filtros button{border:1px solid var(--line);background:var(--surface);color:var(--muted);border-radius:100px;padding:10px 16px;font:600 12px 'DM Sans',sans-serif;cursor:pointer;transition:background .25s,border-color .25s,transform .25s}
+.site-github-filtros button:hover{transform:translateY(-2px);border-color:var(--accent)}
+.site-github-filtros button[aria-pressed="true"]{color:var(--paper);background:var(--accent-dark);border-color:var(--accent-dark)}
+.site-github-filtros button span{margin-left:3px;font-size:10px;opacity:.85}
+.site-github-contagem{font-size:12px;color:var(--muted);margin:12px 0 20px}
+.site-github-grade{align-items:stretch}
+.site-github-card{position:relative;display:flex;flex-direction:column;min-height:306px;border-top:3px solid var(--site-cor,var(--accent));transition:transform .3s ease,box-shadow .3s ease,opacity .3s}
+.site-github-card[hidden]{display:none!important}
+.site-github-card .site-github-symbol{display:grid;place-items:center;width:57px;height:57px;border-radius:18px;background:color-mix(in srgb,var(--site-cor) 14%,var(--surface));color:var(--site-cor);margin-bottom:13px;transition:transform .4s ease}
+.site-github-card:hover .site-github-symbol{transform:translateY(-4px) rotate(-7deg)}
+.site-github-category{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--site-cor);margin-bottom:8px}
+.site-github-card h3{font-size:17px;line-height:1.35;margin:0 0 10px}
+.site-github-card p{color:var(--muted);line-height:1.65;font-size:12px;margin:0 0 10px}
+.site-github-card .tags{margin-top:auto;padding-top:9px;margin-bottom:14px}
+.site-github-links{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.site-github-links a{font-size:12px;font-weight:700;text-decoration:none;border-radius:11px;padding:10px 13px;display:inline-flex;align-items:center;gap:10px;min-height:38px;transition:transform .25s ease}
+.site-github-links a:hover{transform:translateY(-2px)}
+.site-github-links .site-github-primary{background:var(--site-cor);color:white}
+.site-github-links .site-github-secondary{color:var(--accent-dark);background:var(--paper);border:1px solid var(--line)}
+.site-github-filtros button:focus-visible,.site-github-links a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+@media(max-width:800px){.site-github-grade{grid-template-columns:repeat(2,minmax(0,1fr))}.site-github-card{min-height:306px}}
+@media(max-width:560px){.site-github-grade{grid-template-columns:1fr}.site-github-card{min-height:250px}.site-github-filtros{gap:7px}.site-github-filtros button{padding:8px 11px;font-size:11px}}
+@media(prefers-reduced-motion:reduce){.site-github-card,.site-github-card .site-github-symbol,.site-github-links a{transition:none!important}}
